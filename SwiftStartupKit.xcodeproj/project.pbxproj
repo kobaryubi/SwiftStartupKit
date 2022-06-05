@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB32284C272C00ECA7EE /* CircleImage.swift */; };
+		2C07AB35284C38DD00ECA7EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB34284C38DD00ECA7EE /* MapView.swift */; };
 		2C42939F284ADE78001475DC /* SwiftStartupKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42939E284ADE78001475DC /* SwiftStartupKitApp.swift */; };
 		2C4293A1284ADE78001475DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4293A0284ADE78001475DC /* ContentView.swift */; };
 		2C4293A3284ADE88001475DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4293A2284ADE88001475DC /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		2C07AB32284C272C00ECA7EE /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		2C07AB34284C38DD00ECA7EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2C42939B284ADE78001475DC /* SwiftStartupKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStartupKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C42939E284ADE78001475DC /* SwiftStartupKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStartupKitApp.swift; sourceTree = "<group>"; };
 		2C4293A0284ADE78001475DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				2C42939E284ADE78001475DC /* SwiftStartupKitApp.swift */,
+				2C07AB34284C38DD00ECA7EE /* MapView.swift */,
 				2C4293A0284ADE78001475DC /* ContentView.swift */,
 				2C4293A2284ADE88001475DC /* Assets.xcassets */,
 				2C07AB32284C272C00ECA7EE /* CircleImage.swift */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4293A1284ADE78001475DC /* ContentView.swift in Sources */,
+				2C07AB35284C38DD00ECA7EE /* MapView.swift in Sources */,
 				2C42939F284ADE78001475DC /* SwiftStartupKitApp.swift in Sources */,
 				2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */,
 			);
