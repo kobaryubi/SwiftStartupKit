@@ -10,7 +10,6 @@
 		2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB32284C272C00ECA7EE /* CircleImage.swift */; };
 		2C07AB35284C38DD00ECA7EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB34284C38DD00ECA7EE /* MapView.swift */; };
 		2C07AB37284C71A500ECA7EE /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB36284C71A500ECA7EE /* MeetingView.swift */; };
-		2C07AB39284C775B00ECA7EE /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB38284C775B00ECA7EE /* TodosView.swift */; };
 		2C07AB3C284CBB8F00ECA7EE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB3B284CBB8F00ECA7EE /* Theme.swift */; };
 		2C07AB3E284CE3BF00ECA7EE /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB3D284CE3BF00ECA7EE /* DailyScrum.swift */; };
 		2C07AB40284E365F00ECA7EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB3F284E365F00ECA7EE /* CardView.swift */; };
@@ -20,13 +19,13 @@
 		2C4293A1284ADE78001475DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4293A0284ADE78001475DC /* ContentView.swift */; };
 		2C4293A3284ADE88001475DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4293A2284ADE88001475DC /* Assets.xcassets */; };
 		2C4293A6284ADE88001475DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4293A5284ADE88001475DC /* Preview Assets.xcassets */; };
+		2CDDC8972863D5A000A1C9D9 /* LandmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDDC8962863D5A000A1C9D9 /* LandmarkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C07AB32284C272C00ECA7EE /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		2C07AB34284C38DD00ECA7EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2C07AB36284C71A500ECA7EE /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
-		2C07AB38284C775B00ECA7EE /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
 		2C07AB3B284CBB8F00ECA7EE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		2C07AB3D284CE3BF00ECA7EE /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		2C07AB3F284E365F00ECA7EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		2C4293A0284ADE78001475DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C4293A2284ADE88001475DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C4293A5284ADE88001475DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CDDC8962863D5A000A1C9D9 /* LandmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +86,10 @@
 				2C07AB32284C272C00ECA7EE /* CircleImage.swift */,
 				2C4293A4284ADE88001475DC /* Preview Content */,
 				2C07AB36284C71A500ECA7EE /* MeetingView.swift */,
-				2C07AB38284C775B00ECA7EE /* TodosView.swift */,
 				2C07AB3F284E365F00ECA7EE /* CardView.swift */,
 				2C07AB41284E36F900ECA7EE /* TodoView.swift */,
 				2C07AB47285DF58D00ECA7EE /* ScrumsView.swift */,
+				2CDDC8962863D5A000A1C9D9 /* LandmarkView.swift */,
 			);
 			path = SwiftStartupKit;
 			sourceTree = "<group>";
@@ -174,12 +174,12 @@
 			files = (
 				2C07AB3E284CE3BF00ECA7EE /* DailyScrum.swift in Sources */,
 				2C07AB40284E365F00ECA7EE /* CardView.swift in Sources */,
+				2CDDC8972863D5A000A1C9D9 /* LandmarkView.swift in Sources */,
 				2C07AB42284E36F900ECA7EE /* TodoView.swift in Sources */,
 				2C4293A1284ADE78001475DC /* ContentView.swift in Sources */,
 				2C07AB35284C38DD00ECA7EE /* MapView.swift in Sources */,
 				2C07AB37284C71A500ECA7EE /* MeetingView.swift in Sources */,
 				2C42939F284ADE78001475DC /* SwiftStartupKitApp.swift in Sources */,
-				2C07AB39284C775B00ECA7EE /* TodosView.swift in Sources */,
 				2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */,
 				2C07AB3C284CBB8F00ECA7EE /* Theme.swift in Sources */,
 				2C07AB48285DF58D00ECA7EE /* ScrumsView.swift in Sources */,
