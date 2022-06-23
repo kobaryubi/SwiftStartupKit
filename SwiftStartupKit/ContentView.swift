@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Todos View")
-            .navigationTitle("Todos")
+        NavigationLink(destination: TodosView()) {
+            Label("Todos", systemImage: "list.bullet")
+        }
+        .navigationTitle("Menu")
     }
 }
 
