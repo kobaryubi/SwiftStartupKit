@@ -9,17 +9,15 @@ import SwiftUI
 
 struct TodosView: View {
     private var todos = [
-        Todo(title: "title 1"),
-        Todo(title: "title 2"),
-        Todo(title: "title 3"),
-        Todo(title: "title 4"),
-        Todo(title: "title 5"),
+        Todo(title: "title", comments: [Comment(content: "content")]),
+        Todo(title: "title", comments: [Comment(content: "content")]),
+        Todo(title: "title", comments: [Comment(content: "content")]),
     ]
     
     var body: some View {
         List {
             ForEach(todos) { todo in
-                NavigationLink(destination: TodoView()) {
+                NavigationLink(destination: TodoView(todo: todo)) {
                     TodoCardView()
                 }
             }

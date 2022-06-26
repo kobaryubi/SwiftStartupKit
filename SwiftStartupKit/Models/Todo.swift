@@ -9,5 +9,6 @@ import Foundation
 
 struct Todo: Identifiable {
     let id = UUID()
-    let title: String
+    var title: String
+    var comments: [Comment]
 }

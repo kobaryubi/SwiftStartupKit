@@ -16,6 +16,7 @@
 		2C07AB42284E36F900ECA7EE /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB41284E36F900ECA7EE /* TodoView.swift */; };
 		2C07AB48285DF58D00ECA7EE /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB47285DF58D00ECA7EE /* ScrumsView.swift */; };
 		2C201A6C286882DA00CBE311 /* TodoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C201A6B286882DA00CBE311 /* TodoCardView.swift */; };
+		2C201A6E286891B000CBE311 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C201A6D286891B000CBE311 /* Comment.swift */; };
 		2C42939F284ADE78001475DC /* SwiftStartupKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C42939E284ADE78001475DC /* SwiftStartupKitApp.swift */; };
 		2C4293A1284ADE78001475DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4293A0284ADE78001475DC /* ContentView.swift */; };
 		2C4293A3284ADE88001475DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4293A2284ADE88001475DC /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		2C07AB41284E36F900ECA7EE /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		2C07AB47285DF58D00ECA7EE /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		2C201A6B286882DA00CBE311 /* TodoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCardView.swift; sourceTree = "<group>"; };
+		2C201A6D286891B000CBE311 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2C42939B284ADE78001475DC /* SwiftStartupKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStartupKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C42939E284ADE78001475DC /* SwiftStartupKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStartupKitApp.swift; sourceTree = "<group>"; };
 		2C4293A0284ADE78001475DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				2C07AB3B284CBB8F00ECA7EE /* Theme.swift */,
 				2C07AB3D284CE3BF00ECA7EE /* DailyScrum.swift */,
 				2CDDC89E2864947100A1C9D9 /* Todo.swift */,
+				2C201A6D286891B000CBE311 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				2C42939F284ADE78001475DC /* SwiftStartupKitApp.swift in Sources */,
 				2CDDC89B2863D8CA00A1C9D9 /* DailyScrumDetailView.swift in Sources */,
 				2C201A6C286882DA00CBE311 /* TodoCardView.swift in Sources */,
+				2C201A6E286891B000CBE311 /* Comment.swift in Sources */,
 				2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */,
 				2C07AB3C284CBB8F00ECA7EE /* Theme.swift in Sources */,
 				2CDDC89F2864947100A1C9D9 /* Todo.swift in Sources */,
