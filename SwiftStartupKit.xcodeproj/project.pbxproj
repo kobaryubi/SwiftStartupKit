@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB32284C272C00ECA7EE /* CircleImage.swift */; };
-		2C07AB35284C38DD00ECA7EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB34284C38DD00ECA7EE /* MapView.swift */; };
 		2C07AB37284C71A500ECA7EE /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB36284C71A500ECA7EE /* MeetingView.swift */; };
 		2C07AB3C284CBB8F00ECA7EE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB3B284CBB8F00ECA7EE /* Theme.swift */; };
 		2C07AB3E284CE3BF00ECA7EE /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB3D284CE3BF00ECA7EE /* DailyScrum.swift */; };
@@ -30,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		2C07AB32284C272C00ECA7EE /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		2C07AB34284C38DD00ECA7EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2C07AB36284C71A500ECA7EE /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		2C07AB3B284CBB8F00ECA7EE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		2C07AB3D284CE3BF00ECA7EE /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 			children = (
 				2C07AB3A284CBB5200ECA7EE /* Models */,
 				2C42939E284ADE78001475DC /* SwiftStartupKitApp.swift */,
-				2C07AB34284C38DD00ECA7EE /* MapView.swift */,
 				2C4293A0284ADE78001475DC /* ContentView.swift */,
 				2C4293A2284ADE88001475DC /* Assets.xcassets */,
 				2C07AB32284C272C00ECA7EE /* CircleImage.swift */,
@@ -196,7 +193,6 @@
 				2CDDC8972863D5A000A1C9D9 /* LandmarkView.swift in Sources */,
 				2C07AB42284E36F900ECA7EE /* TodoView.swift in Sources */,
 				2C4293A1284ADE78001475DC /* ContentView.swift in Sources */,
-				2C07AB35284C38DD00ECA7EE /* MapView.swift in Sources */,
 				2C07AB37284C71A500ECA7EE /* MeetingView.swift in Sources */,
 				2C42939F284ADE78001475DC /* SwiftStartupKitApp.swift in Sources */,
 				2CDDC89B2863D8CA00A1C9D9 /* DailyScrumDetailView.swift in Sources */,
