@@ -10,6 +10,8 @@ import SwiftUI
 struct TodoView: View {
     let todo: Todo
     
+    @State private var isPresentingEditTodoView = false
+    
     var body: some View {
         List {
             Section(header: Text("Detail")) {
@@ -21,16 +23,42 @@ struct TodoView: View {
                 }
             }
         }
+        .navigationTitle(todo.title)
+        .toolbar {
+            Button("Edit") {
+                isPresentingEditTodoView = true
+            }
+        }
+        .sheet(isPresented: $isPresentingEditTodoView) {
+            NavigationView {
+                EditTodoView()
+                    .navigationTitle(todo.title)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                isPresentingEditTodoView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                isPresentingEditTodoView = false
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 
 struct TodoView_Previews: PreviewProvider {
     static let comments = [
         Comment(content: "comment"),
-        Comment(content: "content")
+        Comment(content: "comment")
     ]
-    static let todo = Todo(title: "title", comments: comments)
+    static let todo = Todo(title: "title", lengthInMinutes: 5, comments: comments)
     static var previews: some View {
-        TodoView(todo: todo)
+        NavigationView {
+            TodoView(todo: todo)
+        }
     }
 }

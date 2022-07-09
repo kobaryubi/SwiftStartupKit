@@ -9,9 +9,9 @@ import SwiftUI
 
 struct TodosView: View {
     private var todos = [
-        Todo(title: "title", comments: [Comment(content: "content")]),
-        Todo(title: "title", comments: [Comment(content: "content")]),
-        Todo(title: "title", comments: [Comment(content: "content")]),
+        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")]),
+        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")]),
+        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")]),
     ]
     
     var body: some View {
