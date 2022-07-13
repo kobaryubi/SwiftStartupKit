@@ -12,4 +12,5 @@ struct Todo: Identifiable {
     var title: String
     var lengthInMinutes: Double
     var comments: [Comment]
+    var theme: TodoTheme
 }

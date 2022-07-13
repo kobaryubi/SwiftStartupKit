@@ -55,7 +55,7 @@ struct TodoView_Previews: PreviewProvider {
         Comment(content: "comment"),
         Comment(content: "comment")
     ]
-    static let todo = Todo(title: "title", lengthInMinutes: 5, comments: comments)
+    static let todo = Todo(title: "title", lengthInMinutes: 5, comments: comments, theme: .buttercup)
     static var previews: some View {
         NavigationView {
             TodoView(todo: todo)

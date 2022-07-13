@@ -14,7 +14,8 @@ struct EditTodoView: View {
         comments: [
             Comment(content: "comment"),
             Comment(content: "comment")
-        ]
+        ],
+        theme: .buttercup
     )
     @State private var newCommentContent = ""
 
@@ -27,6 +28,7 @@ struct EditTodoView: View {
                     Spacer()
                     Text("\(Int(todo.lengthInMinutes)) minutes")
                 }
+                TodoThemePickerView(selection: $todo.theme)
             }
             Section(header: Text("Comments")) {
                 ForEach(todo.comments) { comment in
