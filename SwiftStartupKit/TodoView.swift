@@ -37,7 +37,8 @@ struct TodoView: View {
                         .padding(4)
                         .foregroundColor(todo.theme.accentColor)
                         .background(todo.theme.mainColor)
-                        .cornerRadius(4)                    
+                        .cornerRadius(4)
+                }
             }
             Section(header: Text("Comments")) {
                 ForEach(todo.comments) { comment in
