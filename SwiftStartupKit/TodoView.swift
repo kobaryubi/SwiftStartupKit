@@ -14,8 +14,30 @@ struct TodoView: View {
     
     var body: some View {
         List {
-            Section(header: Text("Detail")) {
-                Text(todo.title)
+            Section(header: Text("Todo Info")) {
+                HStack {
+                    Label("Title", systemImage: "star")
+                    Spacer()
+                    Text(todo.title)
+                }
+                NavigationLink(destination: TodoTimerView(todo: $todo)) {
+                    Label("Start Todo", systemImage: "timer")
+                        .font(.headline)
+                        .foregroundColor(.accentColor)
+                }
+                HStack {
+                    Label("Length", systemImage: "clock")
+                    Spacer()
+                    Text("\(Int(todo.lengthInMinutes)) minutes")
+                }
+                HStack {
+                    Label("Theme", systemImage: "paintpalette")
+                    Spacer()
+                    Text(todo.theme.name)
+                        .padding(4)
+                        .foregroundColor(todo.theme.accentColor)
+                        .background(todo.theme.mainColor)
+                        .cornerRadius(4)                    
             }
             Section(header: Text("Comments")) {
                 ForEach(todo.comments) { comment in
