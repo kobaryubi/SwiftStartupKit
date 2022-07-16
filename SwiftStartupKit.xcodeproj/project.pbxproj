@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB32284C272C00ECA7EE /* CircleImage.swift */; };
-		2C07AB37284C71A500ECA7EE /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB36284C71A500ECA7EE /* MeetingView.swift */; };
 		2C07AB3C284CBB8F00ECA7EE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB3B284CBB8F00ECA7EE /* Theme.swift */; };
 		2C07AB3E284CE3BF00ECA7EE /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB3D284CE3BF00ECA7EE /* DailyScrum.swift */; };
 		2C07AB40284E365F00ECA7EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C07AB3F284E365F00ECA7EE /* CardView.swift */; };
@@ -24,6 +23,7 @@
 		2C889072287AE20F00A7D885 /* TodoThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C889071287AE20F00A7D885 /* TodoThemeView.swift */; };
 		2C889074287AE33200A7D885 /* TodoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C889073287AE33200A7D885 /* TodoTheme.swift */; };
 		2C889076287E350400A7D885 /* TodoThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C889075287E350400A7D885 /* TodoThemePickerView.swift */; };
+		2C8890782882B3AE00A7D885 /* TodoTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8890772882B3AD00A7D885 /* TodoTimerView.swift */; };
 		2CDDC8972863D5A000A1C9D9 /* LandmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDDC8962863D5A000A1C9D9 /* LandmarkView.swift */; };
 		2CDDC89B2863D8CA00A1C9D9 /* DailyScrumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDDC89A2863D8CA00A1C9D9 /* DailyScrumDetailView.swift */; };
 		2CDDC89F2864947100A1C9D9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDDC89E2864947100A1C9D9 /* Todo.swift */; };
@@ -32,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		2C07AB32284C272C00ECA7EE /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		2C07AB36284C71A500ECA7EE /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		2C07AB3B284CBB8F00ECA7EE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		2C07AB3D284CE3BF00ECA7EE /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		2C07AB3F284E365F00ECA7EE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		2C889071287AE20F00A7D885 /* TodoThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoThemeView.swift; sourceTree = "<group>"; };
 		2C889073287AE33200A7D885 /* TodoTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTheme.swift; sourceTree = "<group>"; };
 		2C889075287E350400A7D885 /* TodoThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoThemePickerView.swift; sourceTree = "<group>"; };
+		2C8890772882B3AD00A7D885 /* TodoTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTimerView.swift; sourceTree = "<group>"; };
 		2CDDC8962863D5A000A1C9D9 /* LandmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkView.swift; sourceTree = "<group>"; };
 		2CDDC89A2863D8CA00A1C9D9 /* DailyScrumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrumDetailView.swift; sourceTree = "<group>"; };
 		2CDDC89E2864947100A1C9D9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				2C4293A2284ADE88001475DC /* Assets.xcassets */,
 				2C07AB32284C272C00ECA7EE /* CircleImage.swift */,
 				2C4293A4284ADE88001475DC /* Preview Content */,
-				2C07AB36284C71A500ECA7EE /* MeetingView.swift */,
 				2C07AB3F284E365F00ECA7EE /* CardView.swift */,
 				2C07AB41284E36F900ECA7EE /* TodoView.swift */,
 				2C07AB47285DF58D00ECA7EE /* ScrumsView.swift */,
@@ -114,6 +113,7 @@
 				2C201A6F2869E15B00CBE311 /* EditTodoView.swift */,
 				2C889071287AE20F00A7D885 /* TodoThemeView.swift */,
 				2C889075287E350400A7D885 /* TodoThemePickerView.swift */,
+				2C8890772882B3AD00A7D885 /* TodoTimerView.swift */,
 			);
 			path = SwiftStartupKit;
 			sourceTree = "<group>";
@@ -202,12 +202,12 @@
 				2CDDC8972863D5A000A1C9D9 /* LandmarkView.swift in Sources */,
 				2C07AB42284E36F900ECA7EE /* TodoView.swift in Sources */,
 				2C4293A1284ADE78001475DC /* ContentView.swift in Sources */,
-				2C07AB37284C71A500ECA7EE /* MeetingView.swift in Sources */,
 				2C42939F284ADE78001475DC /* SwiftStartupKitApp.swift in Sources */,
 				2CDDC89B2863D8CA00A1C9D9 /* DailyScrumDetailView.swift in Sources */,
 				2C201A702869E15B00CBE311 /* EditTodoView.swift in Sources */,
 				2C201A6C286882DA00CBE311 /* TodoCardView.swift in Sources */,
 				2C889074287AE33200A7D885 /* TodoTheme.swift in Sources */,
+				2C8890782882B3AE00A7D885 /* TodoTimerView.swift in Sources */,
 				2C889072287AE20F00A7D885 /* TodoThemeView.swift in Sources */,
 				2C201A6E286891B000CBE311 /* Comment.swift in Sources */,
 				2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */,
