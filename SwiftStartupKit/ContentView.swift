@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var todos: [Todo] = [
+        Todo(title: "title", lengthInMinutes: 5, comments: [
+            Comment(content: "comment"),
+            Comment(content: "comment")
+        ], theme: .buttercup),
+        Todo(title: "title", lengthInMinutes: 5, comments: [
+            Comment(content: "comment"),
+            Comment(content: "comment")
+        ], theme: .buttercup)
+    ]
+    
     var body: some View {
-        NavigationLink(destination: TodosView()) {
+        NavigationLink(destination: TodosView(todos: $todos)) {
             Label("Todos", systemImage: "list.bullet")
         }
         .navigationTitle("Menu")

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodoView: View {
-    let todo: Todo
+    @Binding var todo: Todo
     
     @State private var isPresentingEditTodoView = false
     
@@ -31,7 +31,7 @@ struct TodoView: View {
         }
         .sheet(isPresented: $isPresentingEditTodoView) {
             NavigationView {
-                EditTodoView()
+                EditTodoView(todo: $todo)
                     .navigationTitle(todo.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -58,7 +58,7 @@ struct TodoView_Previews: PreviewProvider {
     static let todo = Todo(title: "title", lengthInMinutes: 5, comments: comments, theme: .buttercup)
     static var previews: some View {
         NavigationView {
-            TodoView(todo: todo)
+            TodoView(todo: .constant(todo))
         }
     }
 }

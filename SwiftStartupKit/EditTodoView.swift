@@ -8,15 +8,7 @@
 import SwiftUI
 
 struct EditTodoView: View {
-    @State private var todo = Todo(
-        title: "",
-        lengthInMinutes: 5,
-        comments: [
-            Comment(content: "comment"),
-            Comment(content: "comment")
-        ],
-        theme: .buttercup
-    )
+    @Binding var todo: Todo
     @State private var newCommentContent = ""
 
     var body: some View {
@@ -56,7 +48,17 @@ struct EditTodoView: View {
 }
 
 struct EditTodoView_Previews: PreviewProvider {
+    static let todo = Todo(
+        title: "",
+        lengthInMinutes: 5,
+        comments: [
+            Comment(content: "comment"),
+            Comment(content: "comment"),
+        ],
+        theme: .buttercup
+    )
+    
     static var previews: some View {
-        EditTodoView()
+        EditTodoView(todo: .constant(todo))
     }
 }

@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct TodosView: View {
-    private var todos = [
-        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")], theme: .buttercup),
-        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")], theme: .buttercup),
-        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")], theme: .buttercup),
-    ]
+    @Binding var todos: [Todo]
     
     var body: some View {
         List {
-            ForEach(todos) { todo in
-                NavigationLink(destination: TodoView(todo: todo)) {
+            ForEach($todos) { $todo in
+                NavigationLink(destination: TodoView(todo: $todo)) {
                     TodoCardView()
                 }
             }
@@ -27,9 +23,14 @@ struct TodosView: View {
 }
 
 struct TodosView_Previews: PreviewProvider {
+    static var todos = [
+        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")], theme: .buttercup),
+        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")], theme: .buttercup),
+        Todo(title: "title", lengthInMinutes: 5, comments: [Comment(content: "content")], theme: .buttercup),
+    ]
     static var previews: some View {
         NavigationView {
-            TodosView()
+            TodosView(todos: .constant(todos))
         }
     }
 }
