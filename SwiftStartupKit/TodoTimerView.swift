@@ -9,9 +9,28 @@ import SwiftUI
 
 struct TodoTimerView: View {
     @Binding var todo: Todo
+    @StateObject var todoTimer = TodoTimer()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            RoundedRectangle(cornerRadius: 16.0)
+                .fill(todo.theme.mainColor)
+            VStack {
+                TodoTimerHeaderView(secondsElapsed: todoTimer.secondsElapsed, secondsRemaining: todoTimer.secondsRemaining, todoTheme: todo.theme)
+                Circle()
+                    .strokeBorder(lineWidth: 24)
+            }
+        }
+        .padding()
+        .foregroundColor(todo.theme.accentColor)
+        .onAppear {
+            todoTimer.reset(lengthInMinutes: Int(todo.lengthInMinutes))
+            todoTimer.startTimer()
+        }
+        .onDisappear {
+            todoTimer.stopTimer()
+        }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -30,52 +49,3 @@ struct TodoTimerView_Previews: PreviewProvider {
         TodoTimerView(todo: .constant(todo))
     }
 }
-
-
-
-
-
-
-
-
-////
-////  MeetingView.swift
-////  SwiftStartupKit
-////
-////  Created by Masahiko Kobayashi on 2022/06/05.
-////
-//
-//import SwiftUI
-//
-//struct MeetingView: View {
-//    var body: some View {
-//        VStack {
-//            ProgressView(value: 5, total: 15)
-//            HStack {
-//                VStack(alignment: .leading) {
-//                    Text("Seconds Elapsed").font(.caption)
-//                    Label("300", systemImage: "hourglass.bottomhalf.fill")
-//                }
-//                Spacer()
-//                VStack(alignment: .trailing) {
-//                    Text("Seconds Remaining").font(.caption)
-//                    Label("600", systemImage: "hourglass.tophalf.fill")
-//                }
-//            }
-//            Circle().strokeBorder(lineWidth: 24)
-//            HStack{
-//                Text("Speaker 1 of 3")
-//                Spacer()
-//                Button(action: {}) {
-//                    Image(systemName: "forward.fill")
-//                }
-//            }
-//        }.padding()
-//    }
-//}
-//
-//struct MeetingView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MeetingView()
-//    }
-//}

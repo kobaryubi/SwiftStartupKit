@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var todos: [Todo] = [
-        Todo(title: "title", lengthInMinutes: 5, comments: [
+        Todo(title: "title", lengthInMinutes: 1, comments: [
             Comment(content: "comment"),
             Comment(content: "comment")
         ], theme: .buttercup),
-        Todo(title: "title", lengthInMinutes: 5, comments: [
+        Todo(title: "title", lengthInMinutes: 1, comments: [
             Comment(content: "comment"),
             Comment(content: "comment")
         ], theme: .buttercup)
