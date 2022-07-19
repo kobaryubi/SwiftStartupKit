@@ -11,6 +11,6 @@ struct Todo: Identifiable {
     let id = UUID()
     var title: String
     var lengthInMinutes: Double
-    var comments: [Comment]
-    var theme: TodoTheme
+    var comments: [TodoComment]
+    var theme: Theme
 }
