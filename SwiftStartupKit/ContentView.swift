@@ -8,22 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var todos: [Todo] = [
-        Todo(title: "title", lengthInMinutes: 1, comments: [
-            Comment(content: "comment"),
-            Comment(content: "comment")
-        ], theme: .buttercup),
-        Todo(title: "title", lengthInMinutes: 1, comments: [
-            Comment(content: "comment"),
-            Comment(content: "comment")
-        ], theme: .buttercup)
-    ]
+    @StateObject private var dailyScrumStore = DailyScrumStore()
     
     var body: some View {
-        NavigationLink(destination: TodosView(todos: $todos)) {
-            Label("Todos", systemImage: "list.bullet")
+        VStack {
+            NavigationLink(
+                destination: DailyScrumsView(
+                    dailyScrums: $dailyScrumStore.dailyScrums
+                ) {
+                    DailyScrumStore.save(
+                        dailyScrums: dailyScrumStore.dailyScrums
+                    ) { result in
+                        if case .failure(let error) = result {
+                            fatalError(error.localizedDescription)
+                        }
+                    }
+                }
+            ) {
+                Label("Daily Scrums", systemImage: "person")
+            }
+            .navigationTitle("Menu")
+            .onAppear {
+                DailyScrumStore.load { result in
+                    switch result {
+                    case .failure(let error):
+                        fatalError(error.localizedDescription)
+                    case .success(let dailyScrums):
+                        dailyScrumStore.dailyScrums = dailyScrums
+                    }
+                    
+                }
+            }
         }
-        .navigationTitle("Menu")
     }
 }
 
