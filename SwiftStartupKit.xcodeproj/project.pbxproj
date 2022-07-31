@@ -27,6 +27,7 @@
 		2C8890942889920800A7D885 /* DailyScrumThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8890932889920800A7D885 /* DailyScrumThemePickerView.swift */; };
 		2C8890962889922C00A7D885 /* EditDailyScrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8890952889922C00A7D885 /* EditDailyScrumView.swift */; };
 		2C88909828901D5800A7D885 /* DailyScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C88909728901D5800A7D885 /* DailyScrumStore.swift */; };
+		2C88909A28965A6F00A7D885 /* DailyScrumErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C88909928965A6F00A7D885 /* DailyScrumErrorWrapper.swift */; };
 		2CDDC8972863D5A000A1C9D9 /* LandmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDDC8962863D5A000A1C9D9 /* LandmarkView.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		2C8890932889920800A7D885 /* DailyScrumThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrumThemePickerView.swift; sourceTree = "<group>"; };
 		2C8890952889922C00A7D885 /* EditDailyScrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDailyScrumView.swift; sourceTree = "<group>"; };
 		2C88909728901D5800A7D885 /* DailyScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrumStore.swift; sourceTree = "<group>"; };
+		2C88909928965A6F00A7D885 /* DailyScrumErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrumErrorWrapper.swift; sourceTree = "<group>"; };
 		2CDDC8962863D5A000A1C9D9 /* LandmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				2C88908928898FCA00A7D885 /* DailyScrumTimer.swift */,
 				2C88908F288991B000A7D885 /* DailyScrumTheme.swift */,
 				2C88909728901D5800A7D885 /* DailyScrumStore.swift */,
+				2C88909928965A6F00A7D885 /* DailyScrumErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				2C88908C2889911D00A7D885 /* DailyScrumMeetingHeaderView.swift in Sources */,
 				2C88909828901D5800A7D885 /* DailyScrumStore.swift in Sources */,
 				2C889086288770B300A7D885 /* DailyScrumMeetingView.swift in Sources */,
+				2C88909A28965A6F00A7D885 /* DailyScrumErrorWrapper.swift in Sources */,
 				2C88908E2889914B00A7D885 /* DailyScrumMeetingFooterView.swift in Sources */,
 				2C07AB33284C272C00ECA7EE /* CircleImage.swift in Sources */,
 				2C889092288991E100A7D885 /* DailyScrumThemeView.swift in Sources */,
