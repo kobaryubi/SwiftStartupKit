@@ -9,6 +9,12 @@ import SwiftUI
 
 struct DailyScrumView: View {
     @Binding var dailyScrum: DailyScrum
+    @State private var edittableDailyScrum = DailyScrum(
+        title: "",
+        attendees: [],
+        lengthInMinutes: 5.0,
+        theme: .sky
+    )
     @State private var isPresentingEditDailyScrumView = false
     
     var body: some View {
@@ -54,13 +60,14 @@ struct DailyScrumView: View {
         .navigationTitle(dailyScrum.title)
         .toolbar {
             Button("Edit") {
+                edittableDailyScrum = dailyScrum
                 isPresentingEditDailyScrumView = true
             }
         }
         .sheet(isPresented: $isPresentingEditDailyScrumView) {
             NavigationView {
                 EditDailyScrumView(
-                    dailyScrum: $dailyScrum
+                    dailyScrum: $edittableDailyScrum
                 )
                     .navigationTitle(dailyScrum.title)
                     .toolbar {
@@ -72,6 +79,7 @@ struct DailyScrumView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresentingEditDailyScrumView = false
+                                dailyScrum = edittableDailyScrum
                             }
                         }
                     }
