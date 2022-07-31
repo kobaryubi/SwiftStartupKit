@@ -16,11 +16,11 @@ struct ContentView: View {
                 destination: DailyScrumsView(
                     dailyScrums: $dailyScrumStore.dailyScrums
                 ) {
-                    DailyScrumStore.save(
-                        dailyScrums: dailyScrumStore.dailyScrums
-                    ) { result in
-                        if case .failure(let error) = result {
-                            fatalError(error.localizedDescription)
+                    Task {
+                        do {
+                            try await DailyScrumStore.save(dailyScrums: dailyScrumStore.dailyScrums)
+                        } catch {
+                            fatalError("Error saving daily scrums.")
                         }
                     }
                 }
@@ -28,15 +28,11 @@ struct ContentView: View {
                 Label("Daily Scrums", systemImage: "person")
             }
             .navigationTitle("Menu")
-            .onAppear {
-                DailyScrumStore.load { result in
-                    switch result {
-                    case .failure(let error):
-                        fatalError(error.localizedDescription)
-                    case .success(let dailyScrums):
-                        dailyScrumStore.dailyScrums = dailyScrums
-                    }
-                    
+            .task {
+                do {
+                    dailyScrumStore.dailyScrums = try await DailyScrumStore.load()
+                } catch {
+                    fatalError("Error loading scrums.")
                 }
             }
         }
