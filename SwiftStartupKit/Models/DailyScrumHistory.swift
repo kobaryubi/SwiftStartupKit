@@ -7,9 +7,16 @@
 
 import Foundation
 
-struct DailyScrumHistory: Identifiable {
+struct DailyScrumHistory: Identifiable, Codable {
     let id: UUID
     let date: Date
     var attendees: [DailyScrumAttendee]
     var lengthInMinutes: Double
+    
+    init(id: UUID = UUID(), date: Date = Date(), attendees: [DailyScrumAttendee], lengthInMinutes: Double = 5.0) {
+        self.id = id
+        self.date = date
+        self.attendees = attendees
+        self.lengthInMinutes = lengthInMinutes
+    }
 }

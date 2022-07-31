@@ -7,10 +7,25 @@
 
 import Foundation
 
-struct DailyScrum: Identifiable {
-    let id = UUID()
+struct DailyScrum: Identifiable, Codable {
+    let id: UUID
     var title: String
-    var attendees: [String]
+    var attendees: [DailyScrumAttendee]
     var lengthInMinutes: Double
-    var theme: Theme
+    var theme: DailyScrumTheme
+    var history: [DailyScrumHistory] = []
+    
+    init(
+        id: UUID = UUID(),
+        title: String,
+        attendees: [String],
+        lengthInMinutes: Double,
+        theme: DailyScrumTheme
+    ) {
+        self.id = id
+        self.title = title
+        self.attendees = attendees.map { DailyScrumAttendee(name: $0) }
+        self.lengthInMinutes = lengthInMinutes
+        self.theme = theme
+    }
 }
